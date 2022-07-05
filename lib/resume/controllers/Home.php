@@ -61,11 +61,11 @@ class Home extends Controller {
 	$modelTechnicalSkills->search('WHERE contact_id=' . $contactId);
 	$dadaTechnicalSkills = $modelTechnicalSkills->selectAll();
 
-	$modelEducation->order(['end_year' => 'ASC']);
+	$modelEducation->order(['end_year' => 'DESC']);
 	$modelEducation->search('WHERE contact_id=' . $contactId);
 	$dataEducation = $modelEducation->selectAll();
 
-	$modelWorkExprience->order(['end_year' => 'ASC']);
+	$modelWorkExprience->order(['end_year' => 'DESC']);
 	$modelWorkExprience->search('WHERE contact_id=' . $contactId);
 	$dataWorkExprience = $modelWorkExprience->selectAll();
 
