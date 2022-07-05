@@ -1,0 +1,171 @@
+:root {
+  --resumeWidth: 110.0rem;
+  --leftMax: 32.5rem;
+  --rightMin: 30.0rem;
+  --itemPadding: 1.4rem;
+  --defaultFore: #ffffff;
+  --defaultBack: #cd6060;
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url('/assets/fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	padding: 0rem;
+	margin: 0rem;
+}
+
+html { 
+	font-size: 62.5%;
+	font-family: OpenSans, sans-serif;
+}
+
+h1, h2 {
+	font-weight: bold;
+	color: var(--defaultBack);	
+}
+
+hr {
+    height: 0.2rem;
+    background-color: var(--defaultBack);
+    border: none;
+}
+
+.indent {
+	margin-left: var(--itemPadding);
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.resume-wrapper {
+	width: var(--resumeWidth);
+}
+
+.resume {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0.5rem;
+	font-size: 1.6rem;
+}
+
+.left {
+	flex: 1 0 var(--leftMax);
+}
+
+.left, .right {
+	display: flex;
+	flex-wrap: wrap;
+  	flex-direction: column;	
+}
+
+.left > div, .right > div {
+	margin: 0.5rem;
+}
+
+.right {
+	flex: 1200 0 var(--rightMin);
+}
+
+.name {
+	background: var(--defaultBack);
+	color: var(--defaultFore);
+	padding: var(--itemPadding);	
+}
+
+.name h1 {
+	color: var(--defaultFore);
+	font-size: 3.2rem;
+}
+
+.name p {
+	padding-top: 0.4rem;
+}
+
+.name hr {
+	background-color: var(--defaultFore);
+	margin: 0.8rem 0 0.4rem 0;
+}
+
+.info {
+	padding: var(--itemPadding) 0 0 0;
+}
+
+.info div {
+	margin-bottom: 1.6rem;
+}
+
+.info div svg, .info div p {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.info div svg {
+	height: 2.0rem;
+	width: 4.0rem;
+	fill: var(--defaultBack);
+}
+
+.work > .item, .education > .item {
+	margin-top: var(--itemPadding);
+}
+
+.date-address {	
+	display: flex;
+}
+
+.date-address div {
+	color: var(--defaultBack);
+	font-style: italic;
+	margin: 0 0 0.8rem 0;
+}
+
+.date-address div:first-child {
+	margin-left: auto;
+	order: 2;
+}
+
+.work-details > .item  {
+	display: flex;
+	margin-bottom: 0.8rem;
+}
+
+.work-details > .item div svg {
+	height: 1.0rem;
+	fill: var(--defaultBack);
+	margin-right: 1.0rem;
+}
+
+.skills hr {
+	margin-bottom: var(--itemPadding);
+}
+
+.skills .item  {	
+	display: flex;
+	margin-bottom: 0.8rem;
+}
+
+.skills .item div:first-child  {
+	flex: 0 0 7.5rem;
+	font-size: 1.8rem;
+}
+
+.skills .item div:not(:first-child)  {
+	flex-grow: 1;
+	margin: 0.6rem 0 0.6rem 0.4rem;
+}
+
+.skills .item .fill {
+	background-color: var(--defaultBack);
+}
+
+.skills .item .invis {
+  	visibility: hidden;
+}
