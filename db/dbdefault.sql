@@ -79,7 +79,7 @@ INSERT INTO contacts (first_name, last_name, email, city, province, phone, githu
     'Isaac',
     'Barnard',
     'ibarnard89@gmail.com',
-    'St. Catherines',
+    'St. Catharines',
     'ON',
     '(289) 786-0486',
     'github.com/isaacbarnard',
@@ -122,7 +122,7 @@ INSERT INTO technical_skills (contact_id, name, value) VALUES
 INSERT INTO education (contact_id, course_name, school_name, school_city, school_province, start_year, end_year) VALUES(
     1,
     'Computer Systems Technology - Software Development',
-    'Mohwak College',
+    'Mohawk College',
     'Hamilton',
     'ON',
     2012,
